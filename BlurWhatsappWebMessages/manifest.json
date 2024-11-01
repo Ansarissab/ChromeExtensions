@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Web Message Blur",
+  "version": "1.0",
+  "description": "Blur WhatsApp Web messages until hovered.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
