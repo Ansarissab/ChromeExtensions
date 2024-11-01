@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PSX Table Sorter",
+  "version": "1.0",
+  "description": "Automatically adds sorting functionality to the PSX portfolio table.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://dps.psx.com.pk/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
